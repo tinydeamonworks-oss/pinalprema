@@ -45,7 +45,7 @@ export default function App() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [viewMode, setViewMode] = useState<'grid' | 'table'>('table');
-  const [sortBy, setSortBy] = useState<'featured' | 'price-asc' | 'price-desc' | 'discount'>('featured');
+  const [sortBy, setSortBy] = useState<'default' | 'price-asc' | 'price-desc' | 'discount'>('default');
   const [cartDrawerOpen, setCartDrawerOpen] = useState<boolean>(false);
   const [estimateModalOpen, setEstimateModalOpen] = useState<boolean>(false);
   const [priceListModalOpen, setPriceListModalOpen] = useState<boolean>(false);
@@ -181,10 +181,10 @@ export default function App() {
       if (sortBy === 'price-asc') return a.price - b.price;
       if (sortBy === 'price-desc') return b.price - a.price;
       if (sortBy === 'discount') return b.discountPercent - a.discountPercent;
-      // Default: featured first
-      if (a.featured && !b.featured) return -1;
-      if (!a.featured && b.featured) return 1;
-      return 0;
+      // Default: Official Price List Order (1 - 207)
+      const numA = parseInt(a.id.replace(/\D/g, ''), 10) || 0;
+      const numB = parseInt(b.id.replace(/\D/g, ''), 10) || 0;
+      return numA - numB;
     });
   }, [selectedCategory, searchQuery, sortBy]);
 
@@ -482,7 +482,7 @@ export default function App() {
                   className="bg-slate-50 hover:bg-white text-slate-700 text-[11px] sm:text-xs rounded-lg sm:rounded-xl px-1.5 sm:px-2.5 py-1.5 border border-slate-200 focus:outline-none focus:border-red-700 font-bold shadow-2xs cursor-pointer"
                   id="catalog-sort-select"
                 >
-                  <option value="featured">⭐ Featured</option>
+                  <option value="default">📋 Price List Order (1 - 207)</option>
                   <option value="price-asc">₹ Low → High</option>
                   <option value="price-desc">₹ High → Low</option>
                   <option value="discount">% Discount</option>

@@ -302,8 +302,8 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
                       idx % 2 === 0 ? 'bg-white' : 'bg-slate-50/70'
                     }`}
                   >
-                    <td className="p-2 text-center text-slate-400 font-mono text-[10px]">
-                      {idx + 1}
+                    <td className="p-2 text-center text-slate-700 font-mono font-bold text-[10px]">
+                      {product.id.replace('p-', '')}
                     </td>
                     <td className="p-2 font-bold text-slate-900">
                       {product.name}

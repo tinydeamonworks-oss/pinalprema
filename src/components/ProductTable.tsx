@@ -107,6 +107,9 @@ export const ProductTable: React.FC<ProductTableProps> = ({
 
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between gap-1">
+                        <span className="font-mono text-slate-600 font-bold text-[10px] bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200">
+                          #{product.id.replace('p-', '')}
+                        </span>
                         <span className="bg-slate-100 text-slate-700 text-[9px] font-bold px-1.5 py-0.5 rounded-md border border-slate-200 shrink-0">
                           {product.unit}
                         </span>
@@ -211,8 +214,8 @@ export const ProductTable: React.FC<ProductTableProps> = ({
                       id={`table-row-${product.id}`}
                     >
                       {/* S.No */}
-                      <td className="py-2.5 px-3 text-center font-mono text-slate-400">
-                        {index + 1}
+                      <td className="py-2.5 px-3 text-center font-mono font-bold text-slate-700 text-xs sm:text-sm">
+                        {product.id.replace('p-', '')}
                       </td>
 
                       {/* Product Name & Tamil Title */}
@@ -232,11 +235,6 @@ export const ProductTable: React.FC<ProductTableProps> = ({
                           <div>
                             <div className="font-bold text-slate-800 flex items-center gap-1.5">
                               <span>{product.name}</span>
-                              {product.featured && (
-                                <span className="bg-red-600 text-white text-[9px] font-extrabold px-1.5 py-0.2 rounded-full">
-                                  HOT
-                                </span>
-                              )}
                             </div>
                             <div className="text-slate-500 text-xs font-medium">
                               {product.tamilName}

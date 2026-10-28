@@ -218,8 +218,8 @@ export const EstimateModal: React.FC<EstimateModalProps> = ({
                     const lineTotal = item.product.price * item.quantity;
                     return (
                       <tr key={item.product.id} className="hover:bg-slate-50">
-                        <td className="py-2 px-3 text-center text-slate-400 font-mono">
-                          {index + 1}
+                        <td className="py-2 px-3 text-center text-slate-700 font-mono font-bold">
+                          #{item.product.id.replace('p-', '')}
                         </td>
                         <td className="py-2 px-3">
                           <strong className="text-slate-900">{item.product.name}</strong>

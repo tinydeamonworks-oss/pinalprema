@@ -104,7 +104,7 @@ export const RAW_PRODUCTS: Product[] = [
     description: "Original 10 cm Electric (எலக்ட்ரிக்) by Prema Fireworks. Factory-direct wholesale quality cracker for celebrations.",
     soundLevel: "Visual No-Sound",
     inStock: true,
-    featured: true,
+    featured: false,
   },
   {
     id: "p-2",
@@ -254,7 +254,7 @@ export const RAW_PRODUCTS: Product[] = [
     description: "Original 15 cm Electric (எலக்ட்ரிக்) by Prema Fireworks. Factory-direct wholesale quality cracker for celebrations.",
     soundLevel: "Visual No-Sound",
     inStock: true,
-    featured: true,
+    featured: false,
   },
   {
     id: "p-12",
@@ -359,7 +359,7 @@ export const RAW_PRODUCTS: Product[] = [
     description: "Original 30 cm Electric (எலக்ட்ரிக்) by Prema Fireworks. Factory-direct wholesale quality cracker for celebrations.",
     soundLevel: "Visual No-Sound",
     inStock: true,
-    featured: true,
+    featured: false,
   },
   {
     id: "p-19",
@@ -524,7 +524,7 @@ export const RAW_PRODUCTS: Product[] = [
     description: "Original chakkaram big (பெரிய சக்கரம்) by Prema Fireworks. Factory-direct wholesale quality cracker for celebrations.",
     soundLevel: "Visual No-Sound",
     inStock: true,
-    featured: true,
+    featured: false,
   },
   {
     id: "p-30",
@@ -554,7 +554,7 @@ export const RAW_PRODUCTS: Product[] = [
     description: "Original Flower Pot Big (பெரிய பூந்தொட்டி) by Prema Fireworks. Factory-direct wholesale quality cracker for celebrations.",
     soundLevel: "Visual No-Sound",
     inStock: true,
-    featured: true,
+    featured: false,
   },
   {
     id: "p-32",
@@ -1484,7 +1484,7 @@ export const RAW_PRODUCTS: Product[] = [
     description: "Original Magical mushroom (மேஜிக்கல் மஷ்ரூம்) by Prema Fireworks. Factory-direct wholesale quality cracker for celebrations.",
     soundLevel: "Visual No-Sound",
     inStock: true,
-    featured: true,
+    featured: false,
   },
   {
     id: "p-94",
@@ -1919,7 +1919,7 @@ export const RAW_PRODUCTS: Product[] = [
     description: "Original 6\" Megalakshmi (6 அடி மகாலட்சுமி) by Prema Fireworks. Factory-direct wholesale quality cracker for celebrations.",
     soundLevel: "High",
     inStock: true,
-    featured: true,
+    featured: false,
   },
   {
     id: "p-123",
@@ -2099,7 +2099,7 @@ export const RAW_PRODUCTS: Product[] = [
     description: "Original 1000 Wala (1000 வாலா) by Prema Fireworks. Factory-direct wholesale quality cracker for celebrations.",
     soundLevel: "High",
     inStock: true,
-    featured: true,
+    featured: false,
   },
   {
     id: "p-135",
@@ -2294,7 +2294,7 @@ export const RAW_PRODUCTS: Product[] = [
     description: "Original 5 inch Fancy (5 இன்ச் ஃபேன்சி) by Prema Fireworks. Factory-direct wholesale quality cracker for celebrations.",
     soundLevel: "High",
     inStock: true,
-    featured: true,
+    featured: false,
   },
   {
     id: "p-148",
@@ -2324,7 +2324,7 @@ export const RAW_PRODUCTS: Product[] = [
     description: "Original 12 Shot (12 ஷாட்) by Prema Fireworks. Factory-direct wholesale quality cracker for celebrations.",
     soundLevel: "High",
     inStock: true,
-    featured: true,
+    featured: false,
   },
   {
     id: "p-150",
@@ -2339,7 +2339,7 @@ export const RAW_PRODUCTS: Product[] = [
     description: "Original 30 Shot (30 ஷாட்) by Prema Fireworks. Factory-direct wholesale quality cracker for celebrations.",
     soundLevel: "High",
     inStock: true,
-    featured: true,
+    featured: false,
   },
   {
     id: "p-151",
@@ -3074,7 +3074,7 @@ export const RAW_PRODUCTS: Product[] = [
     description: "Original 16 Items Gift Box (16 பொருட்கள்) by Prema Fireworks. Factory-direct wholesale quality cracker for celebrations.",
     soundLevel: "Visual No-Sound",
     inStock: true,
-    featured: true,
+    featured: false,
   },
   {
     id: "p-200",
@@ -3089,7 +3089,7 @@ export const RAW_PRODUCTS: Product[] = [
     description: "Original 22 Items Gift Box (22 பொருட்கள்) by Prema Fireworks. Factory-direct wholesale quality cracker for celebrations.",
     soundLevel: "Visual No-Sound",
     inStock: true,
-    featured: true,
+    featured: false,
   },
   {
     id: "p-201",
@@ -3104,7 +3104,7 @@ export const RAW_PRODUCTS: Product[] = [
     description: "Original 26 Items Gift Box (26 பொருட்கள்) by Prema Fireworks. Factory-direct wholesale quality cracker for celebrations.",
     soundLevel: "Visual No-Sound",
     inStock: true,
-    featured: true,
+    featured: false,
   },
   {
     id: "p-202",
@@ -3194,7 +3194,7 @@ export const RAW_PRODUCTS: Product[] = [
     description: "Original 50 Items Gift Box (50 பொருட்கள்) by Prema Fireworks. Factory-direct wholesale quality cracker for celebrations.",
     soundLevel: "Visual No-Sound",
     inStock: true,
-    featured: true,
+    featured: false,
   },
 ];
 

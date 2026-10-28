@@ -122,6 +122,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       <div className="flex-1 flex flex-col justify-between">
         <div>
           <h4 className="font-bold text-slate-800 text-sm sm:text-base leading-tight group-hover:text-red-700 transition-colors">
+            <span className="text-red-700 font-mono text-xs sm:text-sm mr-1.5 font-black">#{product.id.replace('p-', '')}</span>
             {product.name}
           </h4>
           <p className="text-[11px] text-slate-500 mt-0.5 font-medium">
